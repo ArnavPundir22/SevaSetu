@@ -6,28 +6,30 @@ import { useState } from "react";
 // --- Define service providers ---
 const providers = {
   plumber: [
-    {
-      id: 1,
-      name: "Ramesh Kumar",
-      history: ["Fixed bathroom leak", "Installed kitchen sink"],
-      feedback: ["Good service!", "On time"],
-    },
-    {
-      id: 2,
-      name: "Suresh Verma",
-      history: ["Pipe replacement", "Water motor repair"],
-      feedback: ["Affordable and skilled"],
-    },
+    { id: "PL-7X2A", name: "Bablu", experience: "15 yrs" },
+    { id: "PL-9B6Q", name: "Om veer", experience: "12-15 yrs" },
+    { id: "PL-4M1T", name: "Yash pal", experience: "20 yrs (minimum)" },
+    { id: "PL-8Z5W", name: "Vishal", experience: "8-10 yrs" },
   ],
   electrician: [
-    {
-      id: 3,
-      name: "Anil Sharma",
-      history: ["Fan installation", "Wiring repair"],
-      feedback: ["Very polite", "Quick service"],
-    },
+    { id: "EL-5K9N", name: "Tinku", experience: "12-15 yrs" },
+    { id: "EL-3H7Q", name: "Devi Singh", experience: "20-22 yrs" },
+    { id: "EL-6J2X", name: "Shubham Kumar", experience: "7-9 yrs" },
+    { id: "EL-2R8P", name: "Rajnish", experience: "10 yrs" },
+    { id: "EL-1T5Y", name: "Nitin", experience: "8-10 yrs" },
+  ],
+  carpenter: [
+    { id: "CA-9V3Z", name: "Ravi", experience: "20-25 yrs" },
+    { id: "CA-4L6W", name: "Rinku Kumar", experience: "15 yrs" },
+  ],
+  "ac-service": [
+    { id: "AC-7F2Q", name: "Nitin", experience: "8-10 yrs" },
+  ],
+  "appliance-repair": [
+    { id: "AP-5M8K", name: "Vivek", experience: "8-10 yrs" },
   ],
 };
+
 
 export default function ServiceProviderPage() {
   const { category } = useParams();
