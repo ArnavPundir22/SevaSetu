@@ -5,22 +5,22 @@ import { useState } from "react";
 const teamMembers = [
    { 
     name: "Dr. Shubham Dangwal", 
-    role: "Intro",
+    role: "Assistant Professor",
     bio: "Skills" 
   },
   { 
     name: "Yuvraj Singh Chauhan", 
-    role: "Intro",
+    role: "Student at COER University",
     bio: "Skills" 
   },
   { 
     name: "Arnav Pundir", 
-    role: "Intro",
-    bio: "Skills" 
+    role: "Student at COER University",
+    bio: "Web Developer & AI and Computer Vision Engineer" 
   },
   { 
     name: "Rohan Tomar", 
-    role: "Intro",
+    role: "Student at COER University",
     bio: "Skills" 
   },
 ];
