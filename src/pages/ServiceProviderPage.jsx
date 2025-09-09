@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Briefcase, MessageSquare } from "lucide-react";
 import { useState } from "react";
 
 // --- Define service providers ---
@@ -22,14 +21,9 @@ const providers = {
     { id: "CA-9V3Z", name: "Ravi", experience: "20-25 yrs" },
     { id: "CA-4L6W", name: "Rinku Kumar", experience: "15 yrs" },
   ],
-  "ac-service": [
-    { id: "AC-7F2Q", name: "Nitin", experience: "8-10 yrs" },
-  ],
-  "appliance-repair": [
-    { id: "AP-5M8K", name: "Vivek", experience: "8-10 yrs" },
-  ],
+  "ac-service": [{ id: "AC-7F2Q", name: "Nitin", experience: "8-10 yrs" }],
+  "appliance-repair": [{ id: "AP-5M8K", name: "Vivek", experience: "8-10 yrs" }],
 };
-
 
 export default function ServiceProviderPage() {
   const { category } = useParams();
@@ -40,7 +34,7 @@ export default function ServiceProviderPage() {
     name: "",
     email: "",
     phone: "",
-    whatsapp: "", // ✅ new field
+    whatsapp: "",
     service: category,
     date: "",
     time: "",
@@ -71,7 +65,6 @@ export default function ServiceProviderPage() {
     setMessage("");
 
     try {
-      // Replace with your PC's local IP if testing on mobile
       const response = await fetch(
         "https://service-booking-backend-uc8c.onrender.com/send-booking",
         {
@@ -90,8 +83,6 @@ export default function ServiceProviderPage() {
         setMessage(
           `✅ Booking Confirmed! Your Appointment ID is ${result.appointment_id}`
         );
-
-        // Reset form
         setFormData({
           name: "",
           email: "",
@@ -122,36 +113,31 @@ export default function ServiceProviderPage() {
   };
 
   return (
-   <motion.div className="max-w-6xl mx-auto p-6">
-  <h1 className="text-3xl font-bold mb-6 capitalize bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-    {category} Providers
-  </h1>
+    <motion.div className="max-w-6xl mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-6 capitalize bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+        {category} Providers
+      </h1>
 
-  {serviceProviders.length === 0 ? (
-    <p className="text-gray-400">
-      No providers available in this category yet.
-    </p>
-  ) : (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {serviceProviders.map((p) => (
-        <motion.div
-          key={p.id}
-          className="bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white p-6 rounded-2xl shadow-lg hover:shadow-2xl cursor-pointer"
-          onClick={() => {
-            setSelectedProvider(p);
-            setMessage("");
-          }}
-          whileHover={{ scale: 1.05, y: -3 }}
-        >
-          <h2 className="text-xl font-semibold">{p.name}</h2>
-          <p className="mt-2">Experience: {p.experience}</p>
-        </motion.div>
-      ))}
-    </div>
-  )}
-</motion.div>
-
-
+      {serviceProviders.length === 0 ? (
+        <p className="text-gray-400">No providers available in this category yet.</p>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {serviceProviders.map((p) => (
+            <motion.div
+              key={p.id}
+              className="bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white p-6 rounded-2xl shadow-lg hover:shadow-2xl cursor-pointer"
+              onClick={() => {
+                setSelectedProvider(p);
+                setMessage("");
+              }}
+              whileHover={{ scale: 1.05, y: -3 }}
+            >
+              <h2 className="text-xl font-semibold">{p.name}</h2>
+              <p className="mt-2">Experience: {p.experience}</p>
+            </motion.div>
+          ))}
+        </div>
+      )}
 
       {/* Booking Modal */}
       {selectedProvider && (
@@ -185,8 +171,6 @@ export default function ServiceProviderPage() {
                 required
                 className="w-full p-2 rounded bg-black/30 text-white"
               />
-
-              {/* Contact Number */}
               <input
                 type="text"
                 name="phone"
@@ -196,8 +180,6 @@ export default function ServiceProviderPage() {
                 required
                 className="w-full p-2 rounded bg-black/30 text-white"
               />
-
-              {/* WhatsApp Number */}
               <input
                 type="text"
                 name="whatsapp"
@@ -207,7 +189,6 @@ export default function ServiceProviderPage() {
                 required
                 className="w-full p-2 rounded bg-black/30 text-white"
               />
-
               <input
                 type="date"
                 name="date"
@@ -257,7 +238,6 @@ export default function ServiceProviderPage() {
               </button>
             </form>
 
-            {/* Booking message */}
             {message && (
               <motion.p
                 className="mt-3 text-center font-semibold"
@@ -274,4 +254,3 @@ export default function ServiceProviderPage() {
     </motion.div>
   );
 }
-
