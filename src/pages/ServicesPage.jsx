@@ -7,11 +7,9 @@ const services = [
   { name: "Plumber", slug: "plumber", icon: <Wrench size={32} /> },
   { name: "Electrician", slug: "electrician", icon: <Zap size={32} /> },
   { name: "AC Service", slug: "ac-service", icon: <Wind size={32} /> },
-  { name: "Inverter Repair", slug: "inverter", icon: <BatteryCharging size={32} /> },
-  { name: "RO Service", slug: "ro-service", icon: <Droplet size={32} /> },
-  { name: "Labour", slug: "labour", icon: <Hammer size={32} /> },
-];
-
+  { name: "Appliance Repair", slug: "Appliance", icon: <BatteryCharging size={32} /> },
+  { name: "Carpenter", slug: "carpenter", icon: <hammer size={32} /> },
+  ];
 export default function ServicesPage() {
   return (
     <motion.div
