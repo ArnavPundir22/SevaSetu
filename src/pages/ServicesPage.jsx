@@ -8,7 +8,7 @@ const services = [
   { name: "Electrician", slug: "electrician", icon: <Zap size={32} /> },
   { name: "AC Service", slug: "ac-service", icon: <Wind size={32} /> },
   { name: "Appliance Repair", slug: "Appliance", icon: <BatteryCharging size={32} /> },
-  { name: "Carpenter", slug: "carpenter", icon: <hammer size={32} /> },
+  { name: "Carpenter", slug: "carpenter", icon: <Hammer size={32} /> },
   ];
 export default function ServicesPage() {
   return (
