@@ -22,7 +22,7 @@ const providers = {
     { id: "CA-4L6W", name: "Rinku Kumar", experience: "15 yrs" },
   ],
   "ac-service": [{ id: "AC-7F2Q", name: "Nitin", experience: "8-10 yrs" }],
-  "appliance-repair": [{ id: "AP-5M8K", name: "Vivek", experience: "8-10 yrs" }],
+  "appliance": [{ id: "AP-5M8K", name: "Vivek", experience: "8-10 yrs" }],
 };
 
 export default function ServiceProviderPage() {
