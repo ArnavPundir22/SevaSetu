@@ -10,18 +10,18 @@ const teamMembers = [
   },
   { 
     name: "Yuvraj Singh Chauhan", 
-    role: "Student at COER University",
-    bio: "Skills" 
+    role: "B.Tech - Civil, 2nd Year",
+    bio: "AUTO-CAD SketchUp"
   },
   { 
     name: "Arnav Pundir", 
-    role: "Student at COER University",
+    role: "B.Tech - CSE, 2nd Year",
     bio: "Web Developer & AI and Computer Vision Engineer" 
   },
   { 
     name: "Rohan Tomar", 
-    role: "Student at COER University",
-    bio: "Skills" 
+    role: "B.Tech - Civil, 2nd Year",
+    bio: "AUTO CAD & StaddPro" 
   },
 ];
 
