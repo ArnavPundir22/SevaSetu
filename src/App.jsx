@@ -2,7 +2,7 @@ import { Routes, Route, Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Wrench, Zap, Droplet, Hammer, Sparkles } from "lucide-react";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 import ServicesPage from "./pages/ServicesPage";
 import ServiceProviderPage from "./pages/ServiceProviderPage";
