@@ -122,50 +122,35 @@ export default function ServiceProviderPage() {
   };
 
   return (
-    <motion.div className="max-w-6xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6 capitalize bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-        {category} Providers
-      </h1>
+   <motion.div className="max-w-6xl mx-auto p-6">
+  <h1 className="text-3xl font-bold mb-6 capitalize bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+    {category} Providers
+  </h1>
 
-      {serviceProviders.length === 0 ? (
-        <p className="text-gray-400">
-          No providers available in this category yet.
-        </p>
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {serviceProviders.map((p) => (
-            <motion.div
-              key={p.id}
-              className="bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white p-6 rounded-2xl shadow-lg hover:shadow-2xl cursor-pointer"
-              onClick={() => {
-                setSelectedProvider(p);
-                setMessage("");
-              }}
-              whileHover={{ scale: 1.05, y: -3 }}
-            >
-              <h2 className="text-xl font-semibold">{p.name}</h2>
+  {serviceProviders.length === 0 ? (
+    <p className="text-gray-400">
+      No providers available in this category yet.
+    </p>
+  ) : (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {serviceProviders.map((p) => (
+        <motion.div
+          key={p.id}
+          className="bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white p-6 rounded-2xl shadow-lg hover:shadow-2xl cursor-pointer"
+          onClick={() => {
+            setSelectedProvider(p);
+            setMessage("");
+          }}
+          whileHover={{ scale: 1.05, y: -3 }}
+        >
+          <h2 className="text-xl font-semibold">{p.name}</h2>
+          <p className="mt-2">Experience: {p.experience}</p>
+        </motion.div>
+      ))}
+    </div>
+  )}
+</motion.div>
 
-              <h3 className="flex items-center gap-2 font-semibold mt-4">
-                <Briefcase size={16} /> Work History
-              </h3>
-              <ul className="list-disc ml-6">
-                {p.history.map((job, i) => (
-                  <li key={i}>{job}</li>
-                ))}
-              </ul>
-
-              <h3 className="flex items-center gap-2 font-semibold mt-4">
-                <MessageSquare size={16} /> Feedback
-              </h3>
-              <ul className="list-disc ml-6">
-                {p.feedback.map((fb, i) => (
-                  <li key={i}>{fb}</li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
-        </div>
-      )}
 
       {/* Booking Modal */}
       {selectedProvider && (
