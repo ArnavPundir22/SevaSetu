@@ -152,6 +152,7 @@ export default function ServiceProviderPage() {
 </motion.div>
 
 
+
       {/* Booking Modal */}
       {selectedProvider && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 overflow-auto p-4">
