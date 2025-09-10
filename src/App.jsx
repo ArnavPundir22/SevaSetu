@@ -20,10 +20,11 @@ const services = [
 ];
 
 const featuredPros = [
-  { name: "Rahul Sharma", service: "Plumbing" },
-  { name: "Amit Verma", service: "Electrical" },
-  { name: "Neha Singh", service: "AC & Cooling" },
-  { name: "Rohan Singh", service: "RO Service" },
+  { name: "Yash Pal", service: "Plumbing" },
+  { name: "Devi Singh", service: "Electrical" },
+  { name: "Nitin", service: "AC Services" },
+  { name: "Appliance Repair", service: "Appliance Repair" },
+  { name: "Ravi", services: "Carpenter"
 ];
 
 // ---------------- Navbar ----------------
