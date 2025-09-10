@@ -24,7 +24,7 @@ const featuredPros = [
   { name: "Devi Singh", service: "Electrical" },
   { name: "Nitin", service: "AC Services" },
   { name: "Appliance Repair", service: "Appliance Repair" },
-  { name: "Ravi", services: "Carpenter"
+  { name: "Ravi", services: "Carpenter"},
 ];
 
 // ---------------- Navbar ----------------
