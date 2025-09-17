@@ -22,9 +22,7 @@ const services = [
 const featuredPros = [
   { name: "Yash Pal", service: "Plumbing" },
   { name: "Devi Singh", service: "Electrical" },
-  { name: "Nitin", service: "AC Services" },
-  { name: "Vivek", service: "Appliance Repair" },
-  { name: "Ravi", service: "Carpenter" },
+    { name: "Vivek", service: "Appliance Repair" },
 ];
 
 // ---------------- Navbar ----------------
