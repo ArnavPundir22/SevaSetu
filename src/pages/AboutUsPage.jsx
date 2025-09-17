@@ -141,12 +141,7 @@ export default function AboutUsPage() {
           <motion.div
             className="bg-black/20 backdrop-blur-md p-6 rounded-xl shadow-lg"
             whileHover={{ scale: 1.05 }}
-            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-          >
-            <h3 className="font-semibold text-xl text-green-400">🌍 Local + Global Reach</h3>
-            <p className="text-gray-300 mt-2">
-              We empower local service providers while ensuring professional standards.
-            </p>
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
           </motion.div>
         </div>
       </motion.div>
