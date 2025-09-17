@@ -27,7 +27,7 @@ export default function FeedbackContactPage() {
         className="bg-black/30 backdrop-blur-lg p-8 rounded-2xl shadow-lg w-full max-w-2xl text-left"
       >
         <form
-          action="https://formsubmit.co/arnavp128@gmail.com"
+          action="https://formsubmit.co/sevasetu.services@gmail.com"
           method="POST"
           className="space-y-6"
         >
