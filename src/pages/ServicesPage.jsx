@@ -6,9 +6,9 @@ import { Wrench, Zap, Wind, BatteryCharging, Droplet, Hammer } from "lucide-reac
 const services = [
   { name: "Plumber", slug: "plumber", icon: <Wrench size={32} /> },
   { name: "Electrician", slug: "electrician", icon: <Zap size={32} /> },
-  { name: "AC Service", slug: "ac-service", icon: <Wind size={32} /> },
+  /*{ name: "AC Service", slug: "ac-service", icon: <Wind size={32} /> },*/
   { name: "Appliance Repair", slug: "appliance", icon: <BatteryCharging size={32} /> },
-  { name: "Carpenter", slug: "carpenter", icon: <Hammer size={32} /> },
+  /*{ name: "Carpenter", slug: "carpenter", icon: <Hammer size={32} /> },*/
   ];
 export default function ServicesPage() {
   return (
