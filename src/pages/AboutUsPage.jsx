@@ -123,7 +123,7 @@ export default function AboutUsPage() {
           >
             <h3 className="font-semibold text-xl text-cyan-400">✔ Verified Experts</h3>
             <p className="text-gray-300 mt-2">
-              Every professional is verified and double-checked by experts.
+              For Customer satisfaction we provide online Expert verification.
             </p>
           </motion.div>
 
