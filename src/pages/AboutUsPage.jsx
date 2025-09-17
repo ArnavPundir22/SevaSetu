@@ -9,14 +9,14 @@ const teamMembers = [
     bio: "Skills" 
   },
   { 
-    name: "Yuvraj Singh Chauhan", 
-    role: "B.Tech - Civil, 2nd Year",
-    bio: "AUTO-CAD SketchUp"
-  },
-  { 
     name: "Arnav Pundir", 
     role: "B.Tech - CSE, 2nd Year",
     bio: "Web Developer & AI and Computer Vision Engineer" 
+  },
+   { 
+    name: "Yuvraj Singh Chauhan", 
+    role: "B.Tech - Civil, 2nd Year",
+    bio: "AUTO-CAD SketchUp"
   },
   { 
     name: "Rohan Tomar", 
