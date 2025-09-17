@@ -91,6 +91,66 @@ export default function AboutUsPage() {
         </motion.div>
       </motion.div>
 
+      {/* Our Uniqueness / USP Section */}
+      <motion.div
+        className="max-w-5xl mx-auto text-center space-y-8"
+        initial="hidden"
+        animate="visible"
+        variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.2 } } }}
+      >
+        <h2 className="text-3xl font-bold mb-6">What Makes Us Unique</h2>
+        <p className="text-gray-400 max-w-2xl mx-auto">
+          At SevaSetu, we go beyond just connecting users with service providers.
+          Here’s what makes us stand out:
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <motion.div
+            className="bg-black/20 backdrop-blur-md p-6 rounded-xl shadow-lg"
+            whileHover={{ scale: 1.05 }}
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+          >
+            <h3 className="font-semibold text-xl text-purple-400">⏱ Fast Service Guarantee</h3>
+            <p className="text-gray-300 mt-2">
+              Get services within 15 minutes, or enjoy discounts on delays.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="bg-black/20 backdrop-blur-md p-6 rounded-xl shadow-lg"
+            whileHover={{ scale: 1.05 }}
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+          >
+            <h3 className="font-semibold text-xl text-cyan-400">✔ Verified Experts</h3>
+            <p className="text-gray-300 mt-2">
+              Every professional is verified and double-checked by experts.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="bg-black/20 backdrop-blur-md p-6 rounded-xl shadow-lg"
+            whileHover={{ scale: 1.05 }}
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+          >
+            <h3 className="font-semibold text-xl text-pink-400">🛡 Service Guarantee</h3>
+            <p className="text-gray-300 mt-2">
+              Every service comes with a 10-day reliability guarantee.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="bg-black/20 backdrop-blur-md p-6 rounded-xl shadow-lg"
+            whileHover={{ scale: 1.05 }}
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+          >
+            <h3 className="font-semibold text-xl text-green-400">🌍 Local + Global Reach</h3>
+            <p className="text-gray-300 mt-2">
+              We empower local service providers while ensuring professional standards.
+            </p>
+          </motion.div>
+        </div>
+      </motion.div>
+
       {/* Team Section */}
       <div className="max-w-5xl mx-auto text-center space-y-8">
         <h2 className="text-3xl font-bold mb-6">Meet Our Team</h2>
@@ -153,4 +213,3 @@ export default function AboutUsPage() {
     </div>
   );
 }
-
