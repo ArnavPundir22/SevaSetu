@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Can I cancel or reschedule a booking?",
     answer:
-      "Yes, you can cancel or reschedule up to 12 hours before your appointment without any penalty by contacting us by mailing us at support@example.com.",
+      "Yes, you can cancel or reschedule up to 12 hours before your appointment without any penalty by contacting us by mailing us at sevasetu.services@gmail.com.",
   },
   {
     question: "What areas do you serve?",
@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "How can I contact support?",
     answer:
-      "You can reach us anytime via mailiing us at support@example.com.",
+      "You can reach us anytime via mailiing us at sevasetu.services@gmail.com",
   },
 ];
 
