@@ -1,7 +1,7 @@
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Wrench, Zap, Droplet, Hammer, Sparkles } from "lucide-react";
+import { Wrench, Zap, Droplet, Hammer, Sparkles, BatteryCharging } from "lucide-react";
 import { Analytics } from "@vercel/analytics/react"
 
 import ServicesPage from "./pages/ServicesPage";
@@ -15,8 +15,7 @@ import FeedbackContactPage from "./pages/FeedbackContactPage";
 const services = [
   { name: "Plumbing", icon: <Wrench size={28} /> },
   { name: "Electrical", icon: <Zap size={28} /> },
-  { name: "AC & Cooling", icon: <Droplet size={28} /> },
-  { name: "Carpentry", icon: <Hammer size={28} /> },
+  { name: "Appliance repairing", icon: <BatteryCharging size={28} /> },
 ];
 
 const featuredPros = [
