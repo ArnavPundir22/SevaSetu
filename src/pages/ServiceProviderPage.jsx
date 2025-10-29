@@ -66,7 +66,7 @@ export default function ServiceProviderPage() {
 
     try {
       const response = await fetch(
-        "https://service-booking-backend-uc8c.onrender.com/send-booking",
+        "https://5c13f2ea-79a4-4264-9a07-2f6199fd6f46-00-2yqcgzqyqeaa4.pike.replit.dev/send-booking",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
