@@ -66,7 +66,7 @@ export default function ServiceProviderPage() {
 
     try {
       const response = await fetch(
-        "https://service-booking-backend-uc8c.onrender.com",
+        "https://web-production-2fefb.up.railway.app/send-booking",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
