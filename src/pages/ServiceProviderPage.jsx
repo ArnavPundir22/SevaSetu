@@ -66,7 +66,7 @@ export default function ServiceProviderPage() {
 
     try {
       const response = await fetch(
-        "https://web-production-2fefb.up.railway.app/send-booking",
+        "https://web-production-2fefb.up.railway.app/send-bookings", // bookings se s hta dio mailing shuru ho jayegi
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
