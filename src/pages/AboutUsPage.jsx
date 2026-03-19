@@ -3,27 +3,13 @@ import { Users, Globe, Heart, X } from "lucide-react";
 import { useState } from "react";
 
 const teamMembers = [
-   { 
-    name: "Dr. Shubham Dangwal", 
-    role: "Assistant Professor",
-    bio: "Skills" 
-  },
+   
   { 
     name: "Arnav Pundir", 
     role: "B.Tech - CSE, 2nd Year",
     bio: "Web Developer & AI and Computer Vision Engineer" 
   },
-   { 
-    name: "Yuvraj Singh Chauhan", 
-    role: "B.Tech - Civil, 2nd Year",
-    bio: "AUTO-CAD SketchUp"
-  },
-  { 
-    name: "Rohan Tomar", 
-    role: "B.Tech - Civil, 2nd Year",
-    bio: "AUTO CAD & StaddPro" 
-  },
-];
+  
 
 export default function AboutUsPage() {
   const [selected, setSelected] = useState(null);
