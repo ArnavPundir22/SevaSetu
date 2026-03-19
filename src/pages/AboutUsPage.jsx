@@ -8,7 +8,7 @@ const teamMembers = [
     name: "Arnav Pundir", 
     role: "B.Tech - CSE, 2nd Year",
     bio: "Web Developer & AI and Computer Vision Engineer" 
-  },
+  }]
   
 
 export default function AboutUsPage() {
